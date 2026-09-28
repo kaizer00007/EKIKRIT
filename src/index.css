@@ -1,0 +1,35 @@
+﻿@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-slate-50 text-slate-900 antialiased;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  }
+}
+
+/* Custom GovTech Styles */
+.gov-card {
+  @apply bg-white rounded-xl border border-slate-200 shadow-sm transition-all duration-200;
+}
+
+.gov-badge {
+  @apply inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-semibold;
+}
+
+.gov-badge-success {
+  @apply bg-emerald-50 text-emerald-700 border border-emerald-200;
+}
+
+.gov-badge-warning {
+  @apply bg-amber-50 text-amber-700 border border-amber-200;
+}
+
+.gov-badge-danger {
+  @apply bg-rose-50 text-rose-700 border border-rose-200;
+}
+
+.gov-badge-info {
+  @apply bg-blue-50 text-blue-700 border border-blue-200;
+}
